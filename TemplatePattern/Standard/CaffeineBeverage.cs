@@ -8,6 +8,7 @@ namespace TemplatePattern.Standard
 {
     public abstract class CaffeineBeverage
     {
+        #region Template Method - it controls the algorithm
         public void PrepareBeverage()
         {
             BoilWater();
@@ -15,6 +16,7 @@ namespace TemplatePattern.Standard
             Pour();
             AddCondiments();
         }
+        #region Template Method - it controls the algorithm
 
         public virtual void BoilWater()
         {
